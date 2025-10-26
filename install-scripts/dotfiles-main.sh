@@ -1,8 +1,4 @@
 #!/bin/bash
-# 💫 https://github.com/JaKooLit 💫 #
-# Hyprland-Dots to download from main #
-
-## WARNING: DO NOT EDIT BEYOND THIS LINE IF YOU DON'T KNOW WHAT YOU ARE DOING! ##
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Change the working directory to the parent directory of the script
@@ -24,7 +20,7 @@ if [ -d Hyprland-Dots ]; then
   chmod +x copy.sh
   ./copy.sh 
 else
-  if git clone --depth=1 https://github.com/JaKooLit/Hyprland-Dots; then
+  if git clone --depth=1 https://github.com/dinhphucaz2005/Hyprland-Dots; then
     cd Hyprland-Dots || exit 1
     chmod +x copy.sh
     ./copy.sh 
